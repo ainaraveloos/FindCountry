@@ -1,7 +1,7 @@
 import ky from "ky";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Loading from "../public/Logo.png";
+import Loading from "./assets/Logo.png";
 
 function CountryDetail() {
   const { countryCode } = useParams();
@@ -39,10 +39,11 @@ function CountryDetail() {
   return (
     <div className="flex w-full h-screen justify-center items-center dark:bg-slate-800 bg-white">
       <div className=" max-w-md mx-auto dark:bg-slate-200- bg-white rounded-lg shadow-lg border border-gray-200 mt-6">
+        
         <img
           src={country.flags.svg}
           alt={`${country.name.common} flag`}
-          className="w-full h-52  rounded-t-lg object-cover"
+          className="w-full h-52  rounded-t-lg quality-100 object-cover"
         />
         <h2 className="text-2xl font-bold text-gray-800 my-2 text-center ">
           {country.name.common}
