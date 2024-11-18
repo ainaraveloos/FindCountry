@@ -4,7 +4,7 @@ import CountryCard from "./Components/CountryCard";
 import SearchBar from "./Components/SearchBar";
 import RegionFilter from "./Components/RegionFilter";
 import ModeToggle from "./Components/ToggleMode";
-import Logo from '../public/Logo.png'
+import Logo from "./assets/logo.png";
 
 function CountryList() {
   const [countries, setCountries] = useState([]);
